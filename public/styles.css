@@ -33,8 +33,9 @@ nav {
   align-content:center;
   justify-content:center;
   background-color: rgba(186, 202, 211,.8);
-  border: 1px ridge #046A38;
-  border-radius: 1rem;
+  border: .2rem solid black;
+  border-bottom: .1rem solid black;
+  border-radius: 1rem 1rem 0 0;
   height: 6rem;
 }
 
@@ -95,6 +96,29 @@ h2 {
   padding: .1rem .5rem;
 }
 
+#about-me, #skills{
+  display: block;
+  text-align:center;
+  width:100%;
+  border: .2rem solid black;
+  border-bottom: .1rem solid black;
+}
+
+.intro {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
 #about-me p {
-  
+  font-size: 1.25rem;
+  margin: 4rem auto;
+  width: 50%;
+}
+
+#skills ul li {
+  list-style: none;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align:left;
+  margin-left: 10rem;
 }
