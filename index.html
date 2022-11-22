@@ -19,10 +19,18 @@
           <li ref="#skills">Skills</li>
           <li ref="#contact">Contact</li>
         </ul>
-        <button class="dropdown"><i class="fa-solid fa-circle-chevron-down"></i></button>
+        <button onclick='dropdown()' id="dropdown"><i class="fa-solid fa-circle-chevron-down"></i></button>
       </nav>
-
     </header>
+
+    <section id="sidenav">
+      <ul>
+        <li ref="#home"><button class="home-button">Home</button></li>
+        <li ref="#about-me"><button class="about-button">About</button></li>
+        <li ref="#skills"><button class="skills-button">Skills</button></li>
+        <li ref="#contact"><button class="contact-button">Contact</button></li>
+      </ul>
+    </section>
     <main>
       <section id="about-me">
         <h2 class="about-me">About Me</h2>
@@ -35,14 +43,14 @@
       <section id="skills">
         <h2 class="skills">Skills</h2>
         <ul>
-          <li>Used Front End Engineer career path on Codecademy to improve skills in <strong> Javascript, Mocha, React, Redux</strong></li>
-          <li>Completed the Certified System Architect Exam for <strong>PEGA</strong> by using self-training on PEGA Academy.</li>
-          <li>Developed applications in a team environment using <strong>Agile</strong> and <strong>Scrum</strong> to design and implement code with synergy.</li>
-          <li>Experienced in <strong>.NET Core</strong> development using C#, ASP.NET MVC, Angular, ASP.NET Web API, and Entity Framework.</li>
-          <li>Created client-side views in <strong>ASP.NET MVC</strong> using <strong>HTML, CSS,</strong> and <strong>ASP.NET Razor</strong>.</li>
-          <li>Self-studied <strong>AWS</strong> Developer Certification track and utilized technliogies such as Amazon SQS, S3, EC2, Code Pipeline, CodeCommit, CodeBuild, and CodeDeploy.</li>
-          <li>Used <strong>YAML</strong> and <strong>Jenkins</strong> files to define workflow configurations and run <strong></strong>Github Actions and Jenkins for Continuous Integration.</li>
-          <li>Used <strong>Http</strong> in a client-service relationship between ASP.NET MVC and ASP.NET Web API projects to make the application modular.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Used Front End Engineer career path on Codecademy to improve skills in <strong> Javascript, Mocha, React, Redux</strong>.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Completed the Certified System Architect Exam for <strong>PEGA</strong> by using self-training on PEGA Academy.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Developed applications in a team environment using <strong>Agile</strong> and <strong>Scrum</strong> to design and implement code with synergy.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Experienced in <strong>.NET Core</strong> development using C#, ASP.NET MVC, Angular, ASP.NET Web API, and Entity Framework.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Created client-side views in <strong>ASP.NET MVC</strong> using <strong>HTML, CSS,</strong> and <strong>ASP.NET Razor</strong>.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Self-studied <strong>AWS</strong> Developer Certification track and utilized technliogies such as Amazon SQS, S3, EC2, Code Pipeline, CodeCommit, CodeBuild, and CodeDeploy.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Used <strong>YAML</strong> and <strong>Jenkins</strong> files to define workflow configurations and run <strong></strong>Github Actions and Jenkins for Continuous Integration.</li>
+          <li><i class="fa-solid fa-star-of-life"></i>Used <strong>Http</strong> in a client-service relationship between ASP.NET MVC and ASP.NET Web API projects to make the application modular.</li>
         </ul>
       </section>
     </main>
@@ -54,5 +62,6 @@
         <p id="phone"> <strong>Phone:</strong> 570-985-0950</p>
       </section>
     </footer>
+    <script src="./public/main.js"></script>
   </body>
 </html>
