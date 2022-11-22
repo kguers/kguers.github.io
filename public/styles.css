@@ -1,44 +1,30 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    background-color: rgba(0, 76, 84, .75);
+    background:linear-gradient(90deg, rgba(0, 76, 84, .75), rgba(186, 202, 211,1)), url(./code.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 99.5%;
+    margin: 0 auto;
 }
-/* Scrollbar */
-/* width */
-::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px (165, 172, 175); 
-    border-radius: 2px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: (165, 172, 175); 
-    border-radius: 2px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(165,172,175,.8); 
-  }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
 nav {
-  display: inline-block;
+  position: relative;
+  display: block;
   width: 100%;
   align-content:center;
   justify-content:center;
   background-color: rgba(186, 202, 211,.8);
   border: .2rem solid black;
-  border-bottom: .1rem solid black;
-  border-radius: 1rem 1rem 0 0;
   height: 6rem;
+  right: .3rem;
+  z-index: 5;
 }
-
+/* 1100px width threshold for nav */
 .pfp {
   position: relative;
   margin: .5rem 1rem 0 3rem;
@@ -86,6 +72,14 @@ nav ul li:hover {
   cursor: pointer;
 }
 
+main {
+  position: relative;
+  top: 6.2rem;
+  right: .2rem;
+  width: 100%;
+  background-color: rgba(4,106,56, .4);
+}
+
 h2 {
   display: inline-block;
   margin: 2rem 0;
@@ -101,6 +95,7 @@ h2 {
   text-align:center;
   width:100%;
   border: .2rem solid black;
+  border-top: .1rem solid black;
   border-bottom: .1rem solid black;
 }
 
@@ -125,12 +120,15 @@ h2 {
 
 footer {
   display: inline-block;
+  position: relative;
   justify-content: space-around;
   background-color:rgba(82, 86, 85, 0.8);
   border: .2rem solid black;
-  border-radius: 0 0 1rem 1rem;
+  border-top: .1rem solid black;
   width: 100%; 
   text-align: center;
+  top: 6.2rem;
+  right: .2rem;
 }
 
 h4 {
