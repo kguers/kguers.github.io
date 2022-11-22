@@ -122,3 +122,28 @@ h2 {
   text-align:left;
   margin-left: 10rem;
 }
+
+footer {
+  display: inline-block;
+  justify-content: space-around;
+  background-color:rgba(82, 86, 85, 0.8);
+  border: .2rem solid black;
+  border-radius: 0 0 1rem 1rem;
+  width: 100%; 
+  text-align: center;
+}
+
+h4 {
+  display: inline-block;
+  border-radius: .5rem;
+  background-color: #046A38;
+  color: black;
+  border: .3rem ridge rgb(39, 42, 44);
+  padding: .1rem .5rem;
+  position: relative;
+}
+
+#email, #phone {
+  display: inline-block;
+  margin: 1rem 3rem 1.5rem 3rem;
+}
