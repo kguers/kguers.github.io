@@ -1,10 +1,15 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-    background:linear-gradient(90deg, rgba(0, 76, 84, .75), rgba(186, 202, 211,1)), url(./code.jpg) no-repeat center center fixed;
-    background-size: cover;
-    width: 99.5%;
-    margin: 0 auto;
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 76, 84, 0.75),
+      rgba(186, 202, 211, 1)
+    ),
+    url(./code.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 99.5%;
+  margin: 0 auto;
 }
 
 header {
@@ -16,18 +21,18 @@ nav {
   position: relative;
   display: block;
   width: 100%;
-  align-content:center;
-  justify-content:center;
-  background-color: rgba(186, 202, 211,.8);
-  border: .2rem solid black;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(186, 202, 211,1);
+  border: 0.2rem solid black;
   height: 6rem;
-  right: .3rem;
+  right: 0.3rem;
   z-index: 5;
 }
 /* 1100px width threshold for nav */
 .pfp {
   position: relative;
-  margin: .5rem 1rem 0 3rem;
+  margin: 0.5rem 1rem 0 3rem;
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
@@ -35,68 +40,94 @@ nav {
 
 h1 {
   margin-left: 1rem;
-  border-radius: .5rem;
-  background-color: #046A38;
+  border-radius: 0.5rem;
+  background-color: #046a38;
   color: black;
-  border: .3rem ridge rgb(39, 42, 44);
+  border: 0.3rem ridge rgb(39, 42, 44);
   display: inline-block;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
   position: relative;
   bottom: 2rem;
 }
 
 h1:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
-nav ul {
-  float: right;
-  margin-right: 1rem;
+@media only screen and (max-width: 1200px) {
+  nav ul {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    float: right;
+    margin-right: 1.5rem;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color:rgb(4, 106, 56);
+    border: .2rem ridge rgb(39, 42, 44);
+    border-radius: .5rem;
+    bottom: .35rem;
+  }
 
 }
-nav ul li{
+
+@media only screen and (min-width: 1200px) {
+  nav ul {
+    float: right;
+    margin-right: 1rem;
+  }
+  nav ul li {
     display: inline-block;
     width: 5rem;
     border-radius: 1rem 2rem 0 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-weight: 600;
     padding: 1rem;
     position: relative;
-    background-color: #046A38;
-    border: .2rem outset rgba(165,172,175);
-    margin: .75rem 2rem;
-    bottom: .5rem;
-}
+    background-color: #046a38;
+    border: 0.2rem solid black;
+    margin: 0.75rem 2rem;
+    bottom: 0.5rem;
+  }
 
-nav ul li:hover {
-  cursor: pointer;
+  nav ul li:hover {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    display: none;
+  }
 }
 
 main {
   position: relative;
   top: 6.2rem;
-  right: .2rem;
+  right: 0.2rem;
   width: 100%;
-  background-color: rgba(4,106,56, .4);
+  background-color: rgba(4, 106, 56, 0.4);
 }
 
 h2 {
   display: inline-block;
   margin: 2rem 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: rgba(186, 202, 211);
   color: black;
-  border: .3rem ridge rgb(39, 42, 44);
-  padding: .1rem .5rem;
+  border: 0.3rem ridge rgb(39, 42, 44);
+  padding: 0.1rem 0.5rem;
 }
 
-#about-me, #skills{
+#about-me,
+#skills {
   display: block;
-  text-align:center;
-  width:100%;
-  border: .2rem solid black;
-  border-top: .1rem solid black;
-  border-bottom: .1rem solid black;
+  text-align: center;
+  width: 100%;
+  border: 0.2rem solid black;
+  border-top: 0.1rem solid black;
+  border-bottom: 0.1rem solid black;
 }
 
 .intro {
@@ -114,7 +145,7 @@ h2 {
   list-style: none;
   font-size: 1.1rem;
   line-height: 1.7;
-  text-align:left;
+  text-align: left;
   margin-left: 10rem;
 }
 
@@ -122,26 +153,27 @@ footer {
   display: inline-block;
   position: relative;
   justify-content: space-around;
-  background-color:rgba(82, 86, 85, 0.8);
-  border: .2rem solid black;
-  border-top: .1rem solid black;
-  width: 100%; 
+  background-color: rgba(82, 86, 85, 0.8);
+  border: 0.2rem solid black;
+  border-top: 0.1rem solid black;
+  width: 100%;
   text-align: center;
   top: 6.2rem;
-  right: .2rem;
+  right: 0.2rem;
 }
 
 h4 {
   display: inline-block;
-  border-radius: .5rem;
-  background-color: #046A38;
+  border-radius: 0.5rem;
+  background-color: #046a38;
   color: black;
-  border: .3rem ridge rgb(39, 42, 44);
-  padding: .1rem .5rem;
+  border: 0.3rem ridge rgb(39, 42, 44);
+  padding: 0.1rem 0.5rem;
   position: relative;
 }
 
-#email, #phone {
+#email,
+#phone {
   display: inline-block;
   margin: 1rem 3rem 1.5rem 3rem;
 }
